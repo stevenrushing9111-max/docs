@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<meta name="robots" content="noindex, nofollow" />
+<title>Privacy Policy — forBET</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --bg: #f3efe7;
+    --bg-alt: #ebe5d8;
+    --ink: #161410;
+    --ink-soft: #4a4640;
+    --accent: #b8341a;
+  }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  html, body { background: var(--bg); color: var(--ink); }
+  body {
+    font-family: 'Fraunces', Georgia, serif;
+    min-height: 100vh;
+    padding: clamp(24px, 5vw, 64px);
+    line-height: 1.6;
+    background-image:
+      radial-gradient(circle at 20% 10%, rgba(184,52,26,0.06) 0%, transparent 40%),
+      radial-gradient(circle at 90% 90%, rgba(22,20,16,0.04) 0%, transparent 40%);
+  }
+  .wrap { max-width: 780px; margin: 0 auto; }
+
+  .meta {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 11px;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    color: var(--ink-soft);
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 12px;
+    padding-bottom: 18px;
+    border-bottom: 1px solid var(--ink);
+    margin-bottom: 48px;
+  }
+  .back {
+    color: var(--ink);
+    text-decoration: none;
+    transition: color 0.2s ease;
+  }
+  .back:hover { color: var(--accent); }
+
+  h1 {
+    font-family: 'Fraunces', serif;
+    font-weight: 400;
+    font-size: clamp(40px, 7vw, 78px);
+    line-height: 1;
+    letter-spacing: -0.03em;
+    margin-bottom: 16px;
+  }
+  h1 em { font-style: italic; color: var(--accent); font-weight: 500; }
+  .updated {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 12px;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: var(--ink-soft);
+    margin-bottom: 48px;
+  }
+
+  h2 {
+    font-family: 'Fraunces', serif;
+    font-weight: 500;
+    font-size: clamp(22px, 2.6vw, 28px);
+    letter-spacing: -0.01em;
+    margin-top: 48px;
+    margin-bottom: 14px;
+    display: flex;
+    align-items: baseline;
+    gap: 14px;
+  }
+  h2::before {
+    content: attr(data-num);
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 12px;
+    color: var(--accent);
+    letter-spacing: 0.1em;
+    font-weight: 500;
+  }
+  p, li {
+    font-size: 17px;
+    color: var(--ink);
+    margin-bottom: 14px;
+    line-height: 1.65;
+  }
+  ul { padding-left: 22px; margin-bottom: 14px; }
+  li::marker { color: var(--accent); }
+  strong { font-weight: 700; }
+  a { color: var(--accent); text-decoration: none; border-bottom: 1px solid var(--accent); }
+  a:hover { background: var(--accent); color: var(--bg); }
+
+  .callout {
+    background: var(--bg-alt);
+    border-left: 3px solid var(--accent);
+    padding: 20px 24px;
+    margin: 32px 0;
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 13px;
+    line-height: 1.7;
+    letter-spacing: 0.02em;
+  }
+  .callout strong {
+    display: block;
+    font-size: 11px;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    color: var(--accent);
+    margin-bottom: 8px;
+  }
+
+  .contact-block {
+    margin-top: 64px;
+    padding: 32px;
+    border: 1px solid var(--ink);
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 13px;
+    line-height: 1.8;
+  }
+  .contact-block h3 {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 11px;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    margin-bottom: 14px;
+    font-weight: 500;
+  }
+
+  .nav-other {
+    margin-top: 64px;
+    padding-top: 24px;
+    border-top: 1px solid var(--ink);
+    display: flex;
+    gap: 24px;
+    flex-wrap: wrap;
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 12px;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+  }
+  .nav-other a {
+    color: var(--ink);
+    border-bottom: 1px solid transparent;
+  }
+  .nav-other a:hover { background: transparent; color: var(--accent); border-bottom-color: var(--accent); }
+</style>
+</head>
+<body>
+  <main class="wrap">
+    <div class="meta">
+      <a class="back" href="/">← forBET / Legal Index</a>
+      <span>Document 01 / 03</span>
+    </div>
+
+    <h1><em>Privacy</em><br>Policy</h1>
+    <div class="updated">Effective date: 18 May 2026</div>
+
+    <p>
+      This Privacy Policy describes how the forBET mobile application
+      ("<strong>forBET</strong>", "<strong>the App</strong>", "<strong>we</strong>", "<strong>us</strong>") handles user information.
+      The App is published by FORBET ZAKŁADY BUKMACHERSKIE SP Z O O ("<strong>the Company</strong>").
+      The App is intended exclusively for adult users aged 18 or older.
+    </p>
+
+    <div class="callout">
+      <strong>Summary</strong>
+      The forBET application does not collect, store, transmit, or share any personal data, device data, usage data, or any other information from its users. Nothing leaves your device through this application.
+    </div>
+
+    <h2 data-num="01">No Data Collection</h2>
+    <p>
+      forBET is designed as a no-data application. We do not collect, gather, request, store, log, transmit, sell, or otherwise process any of the following:
+    </p>
+    <ul>
+      <li>Personal information (name, email address, phone number, postal address, identifiers).</li>
+      <li>Financial or payment information.</li>
+      <li>Authentication credentials (passwords, security questions, tokens).</li>
+      <li>Health, fitness, biometric, or medical information.</li>
+      <li>Precise or approximate location data.</li>
+      <li>Photos, videos, audio recordings, voice data, or any other media from your device.</li>
+      <li>Files and documents stored on your device.</li>
+      <li>Calendar entries, contacts, or messages.</li>
+      <li>Device identifiers, advertising identifiers (such as AAID), or unique installation IDs.</li>
+      <li>App activity, in-app actions, search history, or user-generated content.</li>
+      <li>Web browsing history or app usage diagnostics outside of those provided by the operating system or store platform itself.</li>
+      <li>Crash logs or performance data sent to the developer.</li>
+    </ul>
+
+    <h2 data-num="02">No Data Sharing With Third Parties</h2>
+    <p>
+      Because the App does not collect any data, there is nothing to share. We do not transmit information to advertising networks, analytics providers, data brokers, affiliates, business partners, or any other third party. We do not integrate third-party advertising or analytics SDKs that would collect data on our behalf.
+    </p>
+
+    <h2 data-num="03">No Account, No Sign-Up</h2>
+    <p>
+      The App does not require you to create an account, sign in, or provide any personal details in order to use its functionality. There is no registration form, and we do not maintain a user database related to this application.
+    </p>
+
+    <h2 data-num="04">Permissions</h2>
+    <p>
+      The App may request only those permissions strictly necessary for its core functionality to operate on your device. Any such permissions are used locally on your device and are not used to collect, transmit, or share information with the Company or any third party. You can review and revoke permissions at any time through the settings of your Android device.
+    </p>
+
+    <h2 data-num="05">Children</h2>
+    <p>
+      forBET is rated for users aged 18 and over. The App is not directed at children and must not be used by minors. We do not knowingly process information from anyone under the age of 18. If you believe a minor has used the App, please contact us so we can confirm that no data has been collected (as a structural feature of the application, none is).
+    </p>
+
+    <h2 data-num="06">Security</h2>
+    <p>
+      Since the App does not collect or store user data on remote servers, there is no user data held by the Company that could be exposed in the event of a security incident. Communication between your device and the operating system or Google Play services is governed by the security mechanisms of those platforms.
+    </p>
+
+    <h2 data-num="07">Your Rights</h2>
+    <p>
+      Under the EU General Data Protection Regulation (GDPR) and other applicable data protection laws, you have rights including access, rectification, erasure, restriction, objection, and data portability. Because we do not hold any personal data about you, there is no information for us to access, correct, erase, transfer, or otherwise process on your behalf. You may still contact us at any time with questions.
+    </p>
+
+    <h2 data-num="08">Changes to This Policy</h2>
+    <p>
+      We may update this Privacy Policy from time to time to reflect changes in the application or in applicable law. Any updated version will be published at this URL with a revised effective date. We encourage you to review the policy periodically.
+    </p>
+
+    <h2 data-num="09">Governing Law</h2>
+    <p>
+      This Privacy Policy is governed by the laws of the Republic of Poland and applicable European Union regulations, without regard to conflict-of-law principles.
+    </p>
+
+    <h2 data-num="10">Contact</h2>
+    <p>
+      Questions, comments, or requests regarding this Privacy Policy may be sent to the Company at the contact details below.
+    </p>
+
+    <div class="contact-block">
+      <h3>Data Controller</h3>
+      FORBET ZAKŁADY BUKMACHERSKIE SP Z O O<br>
+      Ul. Tamka 16-3<br>
+      00-349 Warszawa<br>
+      Poland (PL)<br><br>
+      Email: <a href="mailto:contact@forbetmedia.com">contact@forbetmedia.com</a>
+    </div>
+
+    <nav class="nav-other">
+      <a href="/tou/">→ Terms of Use</a>
+      <a href="/cookie/">→ Cookie Policy</a>
+      <a href="/">← Back to Index</a>
+    </nav>
+  </main>
+</body>
+</html>
