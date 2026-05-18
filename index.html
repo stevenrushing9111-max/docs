@@ -1,223 +1,76 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<meta name="robots" content="noindex, nofollow" />
-<title>forBET — Legal Documents</title>
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>forBET: Sports Events — Legal Documents</title>
 <style>
-  :root {
-    --bg: #f3efe7;
-    --bg-alt: #ebe5d8;
-    --ink: #161410;
-    --ink-soft: #4a4640;
-    --accent: #b8341a;
-    --line: #161410;
-  }
-  * { box-sizing: border-box; margin: 0; padding: 0; }
-  html, body { background: var(--bg); color: var(--ink); }
+  * { box-sizing: border-box; }
   body {
-    font-family: 'Fraunces', Georgia, serif;
-    min-height: 100vh;
-    padding: clamp(24px, 5vw, 64px);
-    line-height: 1.5;
-    background-image:
-      radial-gradient(circle at 20% 10%, rgba(184,52,26,0.06) 0%, transparent 40%),
-      radial-gradient(circle at 90% 90%, rgba(22,20,16,0.04) 0%, transparent 40%);
-  }
-  .wrap {
-    max-width: 880px;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, sans-serif;
+    max-width: 720px;
     margin: 0 auto;
+    padding: 40px 20px;
+    color: #222;
+    line-height: 1.6;
+    background: #fff;
   }
-  .meta {
-    font-family: 'JetBrains Mono', monospace;
-    font-size: 11px;
-    letter-spacing: 0.18em;
-    text-transform: uppercase;
-    color: var(--ink-soft);
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    gap: 12px;
-    padding-bottom: 18px;
-    border-bottom: 1px solid var(--ink);
-    margin-bottom: clamp(40px, 8vh, 80px);
-  }
-  .meta span:last-child { color: var(--accent); }
-
   h1 {
-    font-family: 'Fraunces', serif;
-    font-weight: 400;
-    font-size: clamp(48px, 9vw, 120px);
-    line-height: 0.95;
-    letter-spacing: -0.04em;
+    font-size: 24px;
+    margin-bottom: 8px;
+  }
+  .app-info {
+    color: #666;
+    font-size: 14px;
     margin-bottom: 32px;
   }
-  h1 em {
-    font-style: italic;
-    color: var(--accent);
-    font-weight: 500;
+  h2 {
+    font-size: 18px;
+    margin-top: 32px;
+    margin-bottom: 16px;
   }
-  .lede {
-    font-size: clamp(16px, 1.8vw, 19px);
-    max-width: 56ch;
-    color: var(--ink-soft);
-    margin-bottom: clamp(48px, 9vh, 96px);
-    line-height: 1.6;
+  ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
   }
-
-  .docs {
-    display: grid;
-    gap: 0;
-    border-top: 1px solid var(--ink);
+  li {
+    margin-bottom: 12px;
   }
-  .doc {
-    display: grid;
-    grid-template-columns: 60px 1fr auto;
-    align-items: center;
-    gap: 24px;
-    padding: 28px 4px;
-    border-bottom: 1px solid var(--ink);
+  a {
+    color: #0066cc;
     text-decoration: none;
-    color: var(--ink);
-    position: relative;
-    overflow: hidden;
-    transition: padding 0.3s ease;
   }
-  .doc::before {
-    content: "";
-    position: absolute;
-    inset: 0;
-    background: var(--ink);
-    transform: scaleX(0);
-    transform-origin: left;
-    transition: transform 0.4s cubic-bezier(0.7, 0, 0.3, 1);
-    z-index: 0;
+  a:hover {
+    text-decoration: underline;
   }
-  .doc:hover::before { transform: scaleX(1); }
-  .doc:hover { padding-left: 24px; padding-right: 24px; color: var(--bg); }
-  .doc:hover .num, .doc:hover .title, .doc:hover .arrow { color: var(--bg); }
-
-  .doc > * { position: relative; z-index: 1; }
-  .num {
-    font-family: 'JetBrains Mono', monospace;
-    font-size: 13px;
-    color: var(--ink-soft);
-    transition: color 0.3s ease;
-  }
-  .title {
-    font-family: 'Fraunces', serif;
-    font-size: clamp(24px, 3.5vw, 36px);
-    font-weight: 400;
-    letter-spacing: -0.02em;
-    transition: color 0.3s ease;
-  }
-  .title small {
-    display: block;
-    font-family: 'JetBrains Mono', monospace;
-    font-size: 11px;
-    letter-spacing: 0.12em;
-    text-transform: uppercase;
-    color: var(--ink-soft);
-    margin-top: 6px;
-    font-weight: 400;
-  }
-  .doc:hover .title small { color: rgba(243,239,231,0.7); }
-  .arrow {
-    font-family: 'JetBrains Mono', monospace;
-    font-size: 24px;
-    transition: color 0.3s ease, transform 0.3s ease;
-  }
-  .doc:hover .arrow { transform: translateX(8px); }
-
-  .footnote {
-    margin-top: clamp(48px, 9vh, 96px);
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-    gap: 32px;
-    font-family: 'JetBrains Mono', monospace;
-    font-size: 12px;
-    color: var(--ink-soft);
+  .contact {
+    margin-top: 40px;
     padding-top: 24px;
-    border-top: 1px solid var(--ink);
+    border-top: 1px solid #eee;
+    font-size: 14px;
+    color: #555;
   }
-  .footnote h4 {
-    font-family: 'JetBrains Mono', monospace;
-    font-size: 10px;
-    letter-spacing: 0.2em;
-    text-transform: uppercase;
-    color: var(--ink);
-    margin-bottom: 10px;
-    font-weight: 500;
-  }
-  .footnote p { line-height: 1.7; }
-  .footnote a { color: var(--accent); text-decoration: none; }
-  .footnote a:hover { text-decoration: underline; }
-
-  @media (max-width: 600px) {
-    .doc { grid-template-columns: 40px 1fr auto; gap: 16px; padding: 22px 4px; }
-    .doc:hover { padding-left: 12px; padding-right: 12px; }
+  .contact p {
+    margin: 4px 0;
   }
 </style>
 </head>
 <body>
-  <main class="wrap">
-    <div class="meta">
-      <span>forBET / Legal Index</span>
-      <span>● Last updated May 2026</span>
-    </div>
+  <h1>forBET: Sports Events</h1>
+  <p class="app-info">Legal documents for the mobile application (Google Play).</p>
 
-    <h1>Legal &amp;<br><em>Compliance</em></h1>
-    <p class="lede">
-      Public documentation for the forBET mobile application, published by FORBET ZAKŁADY BUKMACHERSKIE SP Z O O. The app is intended for adult users (18+). The documents below describe how the application operates with respect to user data, cookies, and terms of use.
-    </p>
+  <h2>Documents</h2>
+  <ul>
+    <li><a href="tou/">Terms of Use</a></li>
+    <li><a href="cookie/">Cookie Policy</a></li>
+    <li><a href="policy/">Privacy Policy</a></li>
+  </ul>
 
-    <nav class="docs" aria-label="Legal documents">
-      <a class="doc" href="/policy/">
-        <span class="num">01</span>
-        <span class="title">Privacy Policy<small>Data handling &amp; user rights</small></span>
-        <span class="arrow">→</span>
-      </a>
-      <a class="doc" href="/tou/">
-        <span class="num">02</span>
-        <span class="title">Terms of Use<small>Conditions for using forBET</small></span>
-        <span class="arrow">→</span>
-      </a>
-      <a class="doc" href="/cookie/">
-        <span class="num">03</span>
-        <span class="title">Cookie Policy<small>How we (don't) use cookies</small></span>
-        <span class="arrow">→</span>
-      </a>
-    </nav>
-
-    <div class="footnote">
-      <div>
-        <h4>Publisher</h4>
-        <p>
-          FORBET ZAKŁADY<br>
-          BUKMACHERSKIE SP Z O O<br>
-          Ul. Tamka 16-3<br>
-          00-349 Warszawa, Poland
-        </p>
-      </div>
-      <div>
-        <h4>Application</h4>
-        <p>
-          forBET<br>
-          com.forbet.android<br>
-          Rated 18+
-        </p>
-      </div>
-      <div>
-        <h4>Support</h4>
-        <p>
-          <a href="mailto:contact@forbetmedia.com">contact@forbetmedia.com</a>
-        </p>
-      </div>
-    </div>
-  </main>
+  <div class="contact">
+    <p><strong>Developer:</strong> FORBET ZAKŁADY BUKMACHERSKIE SP Z O O</p>
+    <p><strong>Address:</strong> Ul. Tamka 16-3, Warszawa 00-349, Poland</p>
+    <p><strong>Support:</strong> contact@forbetmedia.com</p>
+  </div>
 </body>
 </html>

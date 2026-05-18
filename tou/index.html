@@ -1,279 +1,85 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<meta name="robots" content="noindex, nofollow" />
-<title>Terms of Use — forBET</title>
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Terms of Use — forBET: Sports Events</title>
 <style>
-  :root {
-    --bg: #f3efe7;
-    --bg-alt: #ebe5d8;
-    --ink: #161410;
-    --ink-soft: #4a4640;
-    --accent: #b8341a;
-  }
-  * { box-sizing: border-box; margin: 0; padding: 0; }
-  html, body { background: var(--bg); color: var(--ink); }
+  * { box-sizing: border-box; }
   body {
-    font-family: 'Fraunces', Georgia, serif;
-    min-height: 100vh;
-    padding: clamp(24px, 5vw, 64px);
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, sans-serif;
+    max-width: 720px;
+    margin: 0 auto;
+    padding: 40px 20px;
+    color: #222;
     line-height: 1.6;
-    background-image:
-      radial-gradient(circle at 20% 10%, rgba(184,52,26,0.06) 0%, transparent 40%),
-      radial-gradient(circle at 90% 90%, rgba(22,20,16,0.04) 0%, transparent 40%);
+    background: #fff;
   }
-  .wrap { max-width: 780px; margin: 0 auto; }
-
-  .meta {
-    font-family: 'JetBrains Mono', monospace;
-    font-size: 11px;
-    letter-spacing: 0.18em;
-    text-transform: uppercase;
-    color: var(--ink-soft);
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    gap: 12px;
-    padding-bottom: 18px;
-    border-bottom: 1px solid var(--ink);
-    margin-bottom: 48px;
-  }
-  .back { color: var(--ink); text-decoration: none; transition: color 0.2s ease; }
-  .back:hover { color: var(--accent); }
-
-  h1 {
-    font-family: 'Fraunces', serif;
-    font-weight: 400;
-    font-size: clamp(40px, 7vw, 78px);
-    line-height: 1;
-    letter-spacing: -0.03em;
-    margin-bottom: 16px;
-  }
-  h1 em { font-style: italic; color: var(--accent); font-weight: 500; }
-  .updated {
-    font-family: 'JetBrains Mono', monospace;
-    font-size: 12px;
-    letter-spacing: 0.12em;
-    text-transform: uppercase;
-    color: var(--ink-soft);
-    margin-bottom: 48px;
-  }
-
-  h2 {
-    font-family: 'Fraunces', serif;
-    font-weight: 500;
-    font-size: clamp(22px, 2.6vw, 28px);
-    letter-spacing: -0.01em;
-    margin-top: 48px;
-    margin-bottom: 14px;
-    display: flex;
-    align-items: baseline;
-    gap: 14px;
-  }
-  h2::before {
-    content: attr(data-num);
-    font-family: 'JetBrains Mono', monospace;
-    font-size: 12px;
-    color: var(--accent);
-    letter-spacing: 0.1em;
-    font-weight: 500;
-  }
-  p, li {
-    font-size: 17px;
-    color: var(--ink);
-    margin-bottom: 14px;
-    line-height: 1.65;
-  }
-  ul { padding-left: 22px; margin-bottom: 14px; }
-  li::marker { color: var(--accent); }
-  strong { font-weight: 700; }
-  a { color: var(--accent); text-decoration: none; border-bottom: 1px solid var(--accent); }
-  a:hover { background: var(--accent); color: var(--bg); }
-
-  .callout {
-    background: var(--bg-alt);
-    border-left: 3px solid var(--accent);
-    padding: 20px 24px;
-    margin: 32px 0;
-    font-family: 'JetBrains Mono', monospace;
-    font-size: 13px;
-    line-height: 1.7;
-    letter-spacing: 0.02em;
-  }
-  .callout strong {
-    display: block;
-    font-size: 11px;
-    letter-spacing: 0.18em;
-    text-transform: uppercase;
-    color: var(--accent);
-    margin-bottom: 8px;
-  }
-
-  .contact-block {
-    margin-top: 64px;
-    padding: 32px;
-    border: 1px solid var(--ink);
-    font-family: 'JetBrains Mono', monospace;
-    font-size: 13px;
-    line-height: 1.8;
-  }
-  .contact-block h3 {
-    font-family: 'JetBrains Mono', monospace;
-    font-size: 11px;
-    letter-spacing: 0.2em;
-    text-transform: uppercase;
-    margin-bottom: 14px;
-    font-weight: 500;
-  }
-
-  .nav-other {
-    margin-top: 64px;
-    padding-top: 24px;
-    border-top: 1px solid var(--ink);
-    display: flex;
-    gap: 24px;
-    flex-wrap: wrap;
-    font-family: 'JetBrains Mono', monospace;
-    font-size: 12px;
-    letter-spacing: 0.12em;
-    text-transform: uppercase;
-  }
-  .nav-other a { color: var(--ink); border-bottom: 1px solid transparent; }
-  .nav-other a:hover { background: transparent; color: var(--accent); border-bottom-color: var(--accent); }
+  h1 { font-size: 24px; margin-bottom: 8px; }
+  h2 { font-size: 18px; margin-top: 28px; margin-bottom: 10px; }
+  p { margin: 10px 0; }
+  .meta { color: #666; font-size: 14px; margin-bottom: 24px; }
+  a { color: #0066cc; text-decoration: none; }
+  a:hover { text-decoration: underline; }
+  .back { margin-bottom: 24px; font-size: 14px; }
 </style>
 </head>
 <body>
-  <main class="wrap">
-    <div class="meta">
-      <a class="back" href="/">← forBET / Legal Index</a>
-      <span>Document 02 / 03</span>
-    </div>
+  <div class="back"><a href="../">← Back to documents</a></div>
 
-    <h1>Terms<br><em>of Use</em></h1>
-    <div class="updated">Effective date: 18 May 2026</div>
+  <h1>Terms of Use</h1>
+  <p class="meta">Application: forBET: Sports Events (com.forbet.android)<br>Last updated: 18 May 2026</p>
 
-    <p>
-      These Terms of Use (the "<strong>Terms</strong>") govern your access to and use of the forBET mobile application (the "<strong>App</strong>") published by FORBET ZAKŁADY BUKMACHERSKIE SP Z O O ("<strong>the Company</strong>", "<strong>we</strong>", "<strong>us</strong>"). By downloading, installing, or using the App, you confirm that you have read, understood, and agreed to these Terms. If you do not agree, do not install or use the App.
-    </p>
+  <h2>1. Acceptance of terms</h2>
+  <p>By downloading, installing, or using the mobile application "forBET: Sports Events" (the "App"), you agree to be bound by these Terms of Use ("Terms"). If you do not agree with these Terms, please do not install or use the App.</p>
 
-    <div class="callout">
-      <strong>Age requirement</strong>
-      The App is rated 18+. You may use the App only if you are at least 18 years old and legally permitted to do so in your jurisdiction.
-    </div>
+  <h2>2. Eligibility</h2>
+  <p>The App is intended exclusively for users who are at least 18 years of age. By using the App, you confirm that you meet this age requirement and that you are legally permitted to use the App in your jurisdiction.</p>
 
-    <h2 data-num="01">Eligibility</h2>
-    <p>
-      You must be at least 18 years of age to install or use the App. By using the App, you represent and warrant that you meet this age requirement and that you have the full legal capacity to enter into these Terms. The App is not intended for and must not be used by minors.
-    </p>
+  <h2>3. Provider</h2>
+  <p>The App is provided by FORBET ZAKŁADY BUKMACHERSKIE SP Z O O, Ul. Tamka 16-3, Warszawa 00-349, Poland.</p>
 
-    <h2 data-num="02">License to Use the App</h2>
-    <p>
-      Subject to your compliance with these Terms, the Company grants you a limited, non-exclusive, non-transferable, non-sublicensable, revocable license to download, install, and use the App on a device that you own or control, solely for your personal, non-commercial purposes.
-    </p>
-    <p>This license does not grant you any right to:</p>
-    <ul>
-      <li>Sell, rent, lease, sublicense, distribute, or otherwise transfer the App or any portion of it.</li>
-      <li>Modify, adapt, translate, or create derivative works based on the App.</li>
-      <li>Reverse engineer, decompile, disassemble, or attempt to derive the source code of the App, except to the extent expressly permitted by applicable law.</li>
-      <li>Remove, alter, or obscure any proprietary notices on the App.</li>
-      <li>Use the App in any way that violates applicable law or these Terms.</li>
-    </ul>
+  <h2>4. License</h2>
+  <p>We grant you a limited, non-exclusive, non-transferable, revocable license to install and use the App on a compatible device that you own or control, solely for your personal, non-commercial use, in accordance with these Terms and the Google Play Terms of Service.</p>
 
-    <h2 data-num="03">No Data Collection</h2>
-    <p>
-      The App does not collect, store, transmit, or share any personal information, device information, location data, or usage data from its users. For full details, please refer to our <a href="/policy/">Privacy Policy</a>.
-    </p>
+  <h2>5. Permitted use</h2>
+  <p>You agree to use the App only for lawful purposes and in accordance with these Terms. You agree not to:</p>
+  <p>– use the App in any way that violates applicable laws or regulations;<br>
+     – attempt to reverse-engineer, decompile, disassemble, or otherwise derive the source code of the App;<br>
+     – modify, adapt, translate, or create derivative works of the App;<br>
+     – interfere with or disrupt the operation of the App or the servers or networks used to make the App available;<br>
+     – use the App to transmit any harmful code, viruses, or malicious software;<br>
+     – use the App in any manner that could damage, disable, or impair the App.</p>
 
-    <h2 data-num="04">Acceptable Use</h2>
-    <p>You agree that you will not:</p>
-    <ul>
-      <li>Use the App for any unlawful, fraudulent, or unauthorized purpose.</li>
-      <li>Interfere with, disrupt, or attempt to gain unauthorized access to the App, its servers, or any related systems.</li>
-      <li>Use any automated means, including bots, scrapers, or crawlers, to access the App.</li>
-      <li>Attempt to introduce malicious code, viruses, or any harmful components into the App.</li>
-      <li>Use the App in a way that could damage, disable, overburden, or impair its operation.</li>
-    </ul>
+  <h2>6. No data collection</h2>
+  <p>We do not collect, store, process, or transmit any personal data from users of the App. For further details, please refer to our <a href="../policy/">Privacy Policy</a>.</p>
 
-    <h2 data-num="05">Intellectual Property</h2>
-    <p>
-      The App and all related content, including but not limited to its design, source code, graphics, logos, trademarks, and text, are and will remain the exclusive property of the Company and its licensors. The Terms do not transfer any ownership rights to you. All rights not expressly granted in these Terms are reserved by the Company.
-    </p>
+  <h2>7. Intellectual property</h2>
+  <p>All rights, title, and interest in and to the App, including all related intellectual property rights, are and will remain the exclusive property of FORBET ZAKŁADY BUKMACHERSKIE SP Z O O. These Terms do not grant you any rights to our trademarks, logos, or other branding.</p>
 
-    <h2 data-num="06">Updates and Availability</h2>
-    <p>
-      The Company may release updates, improvements, fixes, or modifications to the App from time to time. Such updates may be delivered automatically through the Google Play store. The Company does not guarantee that the App will be available at all times or that it will be free of errors, interruptions, or defects. The App may be modified, suspended, or discontinued at the Company's discretion without prior notice.
-    </p>
+  <h2>8. Third-party content</h2>
+  <p>The App may include or reference information from third-party sources, such as sports events data. We do not endorse and are not responsible for the content, accuracy, or availability of any third-party information.</p>
 
-    <h2 data-num="07">Third-Party Services and Platforms</h2>
-    <p>
-      The App is distributed through the Google Play store, which is operated by Google LLC. Your download, installation, and use of the App through Google Play are also subject to Google's terms and policies. The Company is not responsible for the practices of Google or any other third-party platform.
-    </p>
+  <h2>9. Disclaimer of warranties</h2>
+  <p>The App is provided "as is" and "as available", without warranties of any kind, whether express or implied, including but not limited to warranties of merchantability, fitness for a particular purpose, or non-infringement. We do not warrant that the App will be uninterrupted, error-free, or free of harmful components.</p>
 
-    <h2 data-num="08">Disclaimer of Warranties</h2>
-    <p>
-      The App is provided on an "as is" and "as available" basis, without warranties of any kind, whether express, implied, statutory, or otherwise. To the maximum extent permitted by applicable law, the Company disclaims all warranties, including but not limited to implied warranties of merchantability, fitness for a particular purpose, non-infringement, and any warranties arising out of course of dealing or usage of trade.
-    </p>
-    <p>
-      The Company does not warrant that the App will meet your requirements, operate without interruption, be secure, or be free of errors.
-    </p>
+  <h2>10. Limitation of liability</h2>
+  <p>To the maximum extent permitted by applicable law, FORBET ZAKŁADY BUKMACHERSKIE SP Z O O shall not be liable for any indirect, incidental, special, consequential, or punitive damages, or any loss of profits or revenues, arising out of or in connection with your use of, or inability to use, the App.</p>
 
-    <h2 data-num="09">Limitation of Liability</h2>
-    <p>
-      To the maximum extent permitted by applicable law, in no event shall the Company, its directors, employees, agents, or affiliates be liable for any indirect, incidental, special, consequential, punitive, or exemplary damages, including but not limited to loss of profits, goodwill, data, or other intangible losses arising from or related to your use of, or inability to use, the App.
-    </p>
-    <p>
-      Nothing in these Terms limits or excludes liability that cannot be limited or excluded under applicable law, including liability for gross negligence or wilful misconduct.
-    </p>
+  <h2>11. Termination</h2>
+  <p>We may suspend or terminate your access to the App at any time, with or without notice, for any reason, including breach of these Terms. You may stop using the App at any time by uninstalling it from your device.</p>
 
-    <h2 data-num="10">Indemnification</h2>
-    <p>
-      You agree to indemnify, defend, and hold harmless the Company and its affiliates, officers, directors, employees, and agents from and against any claims, liabilities, damages, losses, and expenses (including reasonable legal fees) arising out of or in any way connected with your violation of these Terms or your misuse of the App.
-    </p>
+  <h2>12. Changes to the App and Terms</h2>
+  <p>We reserve the right to modify, update, or discontinue the App or any part of it at any time. We may also update these Terms from time to time. The updated Terms will be posted on this page with a revised "Last updated" date. Your continued use of the App after such changes constitutes your acceptance of the updated Terms.</p>
 
-    <h2 data-num="11">Termination</h2>
-    <p>
-      The Company may suspend or terminate your right to use the App at any time, without notice, if you violate these Terms or if the Company decides to discontinue the App. Upon termination, you must cease all use of the App and uninstall it from your devices. Sections that by their nature should survive termination shall survive (including intellectual property, disclaimers, limitation of liability, and governing law).
-    </p>
+  <h2>13. Governing law</h2>
+  <p>These Terms shall be governed by and construed in accordance with the laws of Poland, without regard to its conflict of law principles. Any disputes arising out of or in connection with these Terms shall be subject to the exclusive jurisdiction of the competent courts of Warsaw, Poland.</p>
 
-    <h2 data-num="12">Changes to These Terms</h2>
-    <p>
-      The Company may modify these Terms from time to time. The updated version will be published at this URL with a revised effective date. Your continued use of the App after the updated Terms take effect constitutes your acceptance of the changes.
-    </p>
-
-    <h2 data-num="13">Governing Law and Jurisdiction</h2>
-    <p>
-      These Terms are governed by the laws of the Republic of Poland, without regard to conflict-of-law principles. Any dispute arising out of or relating to these Terms or the App shall be subject to the exclusive jurisdiction of the competent courts of Warsaw, Poland, without prejudice to any mandatory rights you may have as a consumer under applicable law.
-    </p>
-
-    <h2 data-num="14">Severability</h2>
-    <p>
-      If any provision of these Terms is held invalid or unenforceable by a court of competent jurisdiction, the remaining provisions shall continue in full force and effect.
-    </p>
-
-    <h2 data-num="15">Contact</h2>
-    <p>
-      If you have any questions about these Terms, please contact us at the details below.
-    </p>
-
-    <div class="contact-block">
-      <h3>Publisher</h3>
-      FORBET ZAKŁADY BUKMACHERSKIE SP Z O O<br>
-      Ul. Tamka 16-3<br>
-      00-349 Warszawa<br>
-      Poland (PL)<br><br>
-      Email: <a href="mailto:contact@forbetmedia.com">contact@forbetmedia.com</a>
-    </div>
-
-    <nav class="nav-other">
-      <a href="/policy/">→ Privacy Policy</a>
-      <a href="/cookie/">→ Cookie Policy</a>
-      <a href="/">← Back to Index</a>
-    </nav>
-  </main>
+  <h2>14. Contact</h2>
+  <p>
+    FORBET ZAKŁADY BUKMACHERSKIE SP Z O O<br>
+    Ul. Tamka 16-3, Warszawa 00-349, Poland<br>
+    Email: <a href="mailto:contact@forbetmedia.com">contact@forbetmedia.com</a>
+  </p>
 </body>
 </html>
